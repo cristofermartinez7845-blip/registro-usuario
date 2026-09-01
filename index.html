@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1>Crear cuenta</h1>
+    <p class="subtitulo">Los campos se validan mientras escribes</p>
+
+    <form id="formRegistro" novalidate>
+
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Cristopher Pérez">
+        <span class="mensaje" id="mensaje-nombre"></span>
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <input type="text" id="correo" name="correo" placeholder="Ej: usuario@correo.com">
+        <span class="mensaje" id="mensaje-correo"></span>
+      </div>
+
+      <div class="campo">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" placeholder="Mínimo 8 caracteres">
+        <span class="mensaje" id="mensaje-contrasena"></span>
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Ej: 7123-4567">
+        <span class="mensaje" id="mensaje-telefono"></span>
+      </div>
+
+      <button type="submit" id="btnEnviar" disabled>Registrarse</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
